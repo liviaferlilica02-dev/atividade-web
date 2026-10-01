@@ -1,0 +1,332 @@
+/* RESET */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* CONFIGURAÇÃO GERAL */
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #222;
+}
+
+
+/* MENU */
+
+nav {
+    position: fixed;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+
+    padding: 18px;
+
+    background-color: rgba(0, 0, 0, 0.75);
+
+    text-align: center;
+
+    z-index: 10;
+}
+
+
+nav a {
+    color: white;
+
+    text-decoration: none;
+
+    margin: 0 15px;
+
+    font-size: 15px;
+
+    font-weight: bold;
+}
+
+
+nav a:hover {
+    color: #42e8cc;
+}
+
+
+/* PRIMEIRA PÁGINA */
+
+main {
+    display: flex;
+
+    min-height: 100vh;
+}
+
+
+.introducao {
+    width: 50%;
+
+    background-color: #42e8cc;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+
+    align-items: flex-start;
+
+    padding: 80px;
+}
+
+
+.introducao h1 {
+    font-size: 55px;
+
+    line-height: 1.05;
+
+    color: #000;
+
+    margin-bottom: 25px;
+}
+
+
+.introducao p {
+    font-size: 14px;
+
+    text-transform: uppercase;
+
+    letter-spacing: 2px;
+
+    margin-bottom: 40px;
+}
+
+
+.seta {
+    font-size: 45px;
+
+    color: #000;
+
+    text-decoration: none;
+}
+
+
+.seta:hover {
+    transform: translateY(5px);
+
+    transition: 0.3s;
+}
+
+
+/* IMAGEM DA PRIMEIRA PÁGINA */
+
+.imagem {
+    width: 50%;
+}
+
+
+.imagem img {
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+    display: block;
+}
+
+
+/* PÁGINAS INTERNAS */
+
+.pagina {
+    min-height: 100vh;
+
+    padding-top: 100px;
+
+    display: flex;
+}
+
+
+/* TEXTO */
+
+.conteudo {
+    width: 50%;
+
+    padding: 80px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+}
+
+
+.conteudo h1 {
+    font-size: 48px;
+
+    margin-bottom: 30px;
+}
+
+
+.conteudo h2 {
+    font-size: 25px;
+
+    margin-bottom: 15px;
+
+    margin-top: 20px;
+}
+
+
+.conteudo p {
+    font-size: 17px;
+
+    line-height: 1.7;
+
+    margin-bottom: 15px;
+
+    max-width: 600px;
+}
+
+
+/* IMAGENS DAS OUTRAS PÁGINAS */
+
+.imagem-secundaria {
+    width: 50%;
+}
+
+
+.imagem-secundaria img {
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+    display: block;
+}
+
+
+/* BOTÕES */
+
+.botao {
+    display: inline-block;
+
+    width: fit-content;
+
+    margin-top: 25px;
+
+    padding: 13px 25px;
+
+    background-color: #42e8cc;
+
+    color: #000;
+
+    text-decoration: none;
+
+    border-radius: 5px;
+
+    font-weight: bold;
+}
+
+
+.botao:hover {
+    background-color: #20c9ad;
+
+    transition: 0.3s;
+}
+
+
+/* CELULAR */
+
+@media (max-width: 768px) {
+
+    nav {
+        padding: 12px 5px;
+    }
+
+
+    nav a {
+        margin: 0 5px;
+
+        font-size: 12px;
+    }
+
+
+    main,
+    .pagina {
+        flex-direction: column;
+    }
+
+
+    .introducao,
+    .imagem,
+    .conteudo,
+    .imagem-secundaria {
+        width: 100%;
+    }
+
+
+    .introducao {
+        min-height: 55vh;
+
+        padding: 50px 35px;
+    }
+
+
+    .introducao h1 {
+        font-size: 42px;
+    }
+
+
+    .imagem {
+        height: 45vh;
+    }
+
+
+    .conteudo {
+        min-height: 55vh;
+
+        padding: 50px 35px;
+    }
+
+
+    .imagem-secundaria {
+        height: 45vh;
+    }
+
+}
+
+/* TABELAS */
+
+.tabela {
+    padding: 50px 10%;
+    background-color: #f5f5f5;
+}
+
+.tabela h2 {
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+    margin-bottom: 40px;
+}
+
+th,
+td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    background-color: #42e8cc;
+    color: #000;
+}
+
+tr:hover {
+    background-color: #f0f0f0;
+}
